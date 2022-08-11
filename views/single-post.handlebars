@@ -1,14 +1,14 @@
-<section class="single-post-container">
+
 {{> post-info post}}
 
 {{#if loggedIn}}
-<div class="comment-container">
-    <h3 class="card-header"></h3>
-    <form class="card-body comment-form" id="comment-form">
-    <div class="form-row">
+<div>
+    <h3></h3>
+    <form class="comment-form" id="comment-form">
+
         <label class="form-label">Comment</label>
-        <input id="comment" name="comment-body" class="form-input  form-control" />
-    </div>
+        <input id="comment" name="comment-body" class="form-input" />
+
         <button type="submit" class="btn">Submit</button>
     </form>
 </div>
@@ -16,8 +16,6 @@
 
 {{> comments post.comments}}
 
-</section>
-
 {{#if loggedIn}}
-<script src="/js/comment.js"></script>
+<script src="/javascript/comment.js"></script>
 {{/if}}
